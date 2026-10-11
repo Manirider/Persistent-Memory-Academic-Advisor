@@ -15,6 +15,25 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat" alt="License: MIT"></a>
 </p>
 
+<p align="center">
+  <a href="https://render.com/deploy?repo=https://github.com/Manirider/Persistent-Memory-Academic-Advisor">
+    <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
+  </a>
+</p>
+
+---
+
+## 🌐 Live Demo & Deployment
+
+Deploy this project with **1 click** to get a free, permanent HTTPS live link:
+
+1. Click the **[Deploy to Render](https://render.com/deploy?repo=https://github.com/Manirider/Persistent-Memory-Academic-Advisor)** button above (or create a Web Service on [Render.com](https://render.com/) and select your GitHub repository `Persistent-Memory-Academic-Advisor`).
+2. Render automatically detects [`render.yaml`](render.yaml) and builds the Docker container.
+3. Once deployed, your live URL will be active with:
+   - **Interactive Web Playground**: `https://<your-service-name>.onrender.com/`
+   - **Swagger API Documentation**: `https://<your-service-name>.onrender.com/docs`
+   - **Live Health Probe**: `https://<your-service-name>.onrender.com/health`
+
 ---
 
 ## 📌 Executive Overview

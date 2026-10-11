@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: persistent-memory-academic-advisor
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: Dockerfile
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: HOST
+        value: 0.0.0.0
+      - key: DB_PATH
+        value: /app/data/advisor_memory.db
+      - key: CHROMA_DB_PATH
+        value: /app/data/chroma_db
+      - key: EMBEDDING_MODEL_NAME
+        value: all-MiniLM-L6-v2
