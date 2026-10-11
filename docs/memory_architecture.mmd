@@ -1,0 +1,24 @@
+flowchart TD
+    Client[Student/Client]
+    Agent[Academic Advisor Agent]
+    API[FastAPI REST API]
+    MCP[MCP Server]
+    Service[Memory Service]
+    SQL[(SQLite + SQLAlchemy)]
+    Embed[Embedding Service]
+    Chroma[(ChromaDB Vector Store)]
+
+    Client --> Agent
+    Agent --> API
+    Agent --> MCP
+    API --> Service
+    MCP --> Service
+    Service --> SQL
+    Service --> Embed
+    Embed --> Chroma
+    Service --> Chroma
+
+    subgraph Persistence
+        SQL
+        Chroma
+    end
